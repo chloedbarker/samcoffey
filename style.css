@@ -1,3 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ENTIRE WEBSITE */
+
 body {
     margin: 0;
     background-color: #F6ECEC;
@@ -5,7 +12,52 @@ body {
     font-family: Arial, sans-serif;
 }
 
-h1 {
+
+/* TOP NAVIGATION */
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+
+    padding: 30px 50px;
+
+    position: sticky;
+    top: 0;
+
+    background-color: #F6ECEC;
+
+    z-index: 1000;
+}
+
+.top-nav a {
+    color: black;
+    text-decoration: none;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.top-nav a:hover {
     color: #DB2D2D;
+}
+
+
+/* PAGE SECTIONS */
+
+section {
+    min-height: 100vh;
+    padding: 80px;
+}
+
+
+/* HEADINGS */
+
+h1,
+h2 {
+    color: #DB2D2D;
+}
+
+h1 {
     font-size: 80px;
 }
